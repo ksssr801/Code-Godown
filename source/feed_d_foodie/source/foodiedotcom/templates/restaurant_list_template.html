@@ -1,0 +1,86 @@
+<html>
+<head>
+<style>
+table {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<center><h2><u>It's FoodieDotCom !</u></h2></center>
+
+<form action="/myapi/restaurant-list">
+    <label for="cuisines">Filter By Cuisines: </label>&nbsp;&nbsp;
+    <input id="cuisines" type="text" name="cuisines" value="{{ cuisines }}">&nbsp;&nbsp;
+    <input type="submit" value="Filter">
+</form>
+
+<form action="/myapi/restaurant-list">
+    <label for="restro_name">Filter By Restaurant: </label>&nbsp;&nbsp;
+    <input id="restro_name" type="text" name="restro_name" value="{{ restro_name }}">&nbsp;&nbsp;
+    <input type="submit" value="Filter">
+</form>
+
+<div align='right'>
+    {% for k, v in sort_keys.items %}
+    <form action="/myapi/restaurant-list">
+        <select name='sort_by'>
+            <option selected="selected" disabled>Select to sort</option>
+            {% for val in v %}
+                <option value="{{ val.value }}">{{ val.name }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Sort">
+    </form>    
+    {% endfor %}
+    {% if sort_by %}
+        Sorted By: {{ sort_by }}
+    {% endif %}
+</div>
+
+
+Total Number of Restaurant(s) - {{ count }}
+<br>
+<br>
+<table>
+  <tr>
+    <th>Resturant</th>
+    <th>Cuisines</th>
+    <th>Average Cost For 2</th>
+    <th>Currency</th>
+    <th>Can Book Table?</th>
+    <th>Online Delivery</th>
+    <th>Rating</th>
+    <th>Votes</th>
+</tr>
+{% for key, value_list in final_dict.items %}
+    {% for val in value_list %}
+    <tr>
+        <td>{{val.restro_name}}</td>
+        <td>{{val.cuisines}}</td>
+        <td>{{val.avg_cost_for_two}}</td>
+        <td>{{val.currency}}</td>
+        <td>{{val.has_table_booking}}</td>
+        <td>{{val.has_online_delivery}}</td>
+        <td>{{val.rating}} - {{val.rating_text}}</td>
+        <td>{{val.votes}}</td>
+    </tr>
+    {% endfor %}
+{% endfor %}
+</table>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<h2>Write Your Blog</h2>
+{% if user.is_authenticated %}
+  Hello, {{ user.first_name }}&nbsp;&nbsp;&nbsp;
+  <a href="{% url 'logout' %}">Logout</a>
+  {% if status %}
+  {{ status }}
+  <br><br>
+  {% endif %}
+  <form action="/myapi/write-your-blog">
+    <label for="blog_title">Title: </label><br><br>
+    <input id="blog_title" type="text" name="blog_title" value="{{ blog_title }}" placeholder="Enter title"><br><br><br>
+    <label for="blog">Blog: </label><br><br>
+    <textarea name="blog" rows="10" cols="30" value="{{ blog }}" placeholder="Write your blog here..."></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+{% else %}
+  <a href="{% url 'login' %}">Login</a>
+  <a href="{% url 'register' %}">Register</a>
+{% endif %}
+

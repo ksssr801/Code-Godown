@@ -1,0 +1,33 @@
+Questions I was asked in interviews:
+	How to secure database details in production setup in django?
+	What is the logic behind Splitwise app?
+	How to find sum pair in a balanced BST for the given sum X?
+	What is decorator in python?
+	What is the difference b/w range and xrange in python?
+	What is the differnce b/w list, tuple & set in python?
+	What is deadlock, starvation & race condition in OS?
+	What is difference between process & thread?
+	What is the use of grep cmd in Linux?
+	What is the difference b/w API & ReST API?
+	What is generator and yield?
+	What is inheritance in python?
+	What is difference between Django & Flask?
+	What are different joins in sql query?
+	What is difference between serializer and models in django?
+	What is memoization in Django?
+	How code reusability works in django?
+	How to implement push notification?
+	Difference b/w django orms and raw query?
+	How to handle a huge number of requests on database?
+	How to handle Git merge conflict?
+	What is difference between ReST and SOAP?
+	What is Abstract base classes in Django?
+	What is signal in Django? Is it asynchronus?
+	What is difference between iteritems() and items() in dict?
+	What is the difference between get and create?
+	How to use foreign key for same model having primary key in django?
+	While reviewing a code, what all points you will going to notice in the code?
+	What is help function in python?
+		
+
+	

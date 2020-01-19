@@ -1,0 +1,21 @@
+<h2>Login</h2>
+
+{% if status %}
+  {{ status }}
+  <br><br>
+{% endif %}
+<form action="/myapi/login" method="POST">
+  <fieldset>
+    {% csrf_token %}
+    <label for="username">Username: </label><br>
+    <input id="username" type="text" name="username" value="{{ username }}" placeholder="Username"><br><br>
+    <label for="password">Password: </label><br>
+    <input id="password" type="password" name="password" value="{{ password }}" placeholder="Password"><br><br>
+    <input type="submit" value="Submit">  
+  </fieldset>
+</form>
+<br>
+<form action="/myapi/register">
+    New? Have an Account.<br>
+    <input type="submit" value="Register">  
+</form>

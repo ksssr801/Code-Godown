@@ -1,0 +1,13 @@
+openssl req \
+       -newkey rsa:2048 -nodes -keyout everest.key \
+       -out everest.csr
+
+
+
+openssl x509 \
+       -signkey everest.key \
+       -in everest.csr \
+       -req -days 365 -out everest.crt
+
+
+http://ar-midtier.trybmc.com:8008/api/arsys/v1/entry/BMC.CORE:BMC_Equipment?Limit=1&ClassId=\"BMC.CORE:BMC_Component\"&Name=\"Channel(525)-2-2-1\"&Eve_IP_Address=\"10.0.0.8\"&DatasetId=\"EVEREST.IMPORT\"&fields=values(Name,Eve_IP_Address,ReconciliationIdentity)&Eve_Equipment_Name=\"Spoke-2\"

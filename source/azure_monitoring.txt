@@ -1,0 +1,31 @@
+
+Azure Monitoring:
+-----------------
+
+Resource Grp - AzureMon
+Tenant Id - de9016f6-cc06-42cf-a8dc-3c8f37270538
+Secret Key - 9uSgbhGO?yr4BA5[If*Mh+4b:[iGec*T
+Client Id - 8b5875e9-5522-4e81-a755-d67a1ff5eadf
+Subscription Id - c10722a4-23af-4bb3-80d7-83bb1f6e1271
+
+SQL Server & Database:
+
+	DB Name - EverestAzureDB
+	Server Name - everestazureserver
+	Server Login - everest
+	Server Pwd - eve@12345
+
+	Server:
+		url - GET https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}?api-version=2015-05-01-preview
+		
+		subscriptionId - c10722a4-23af-4bb3-80d7-83bb1f6e1271
+		resourceGroupName - AzureMon
+		serverName - everestazureserver.database.windows.net
+	Database:
+		url - GET https://management.azure.com/subscriptions/c10722a4-23af-4bb3-80d7-83bb1f6e1271/resourceGroups/AzureMon/providers/Microsoft.Sql/servers/everestazureserver.database.windows.net/databases/EverestAzureDB?api-version=2017-10-01-preview
+
+		subscriptionId - c10722a4-23af-4bb3-80d7-83bb1f6e1271
+		resourceGroupName - AzureMon
+		serverName - everestazureserver.database.windows.net
+		databaseName - EverestAzureDB
+
