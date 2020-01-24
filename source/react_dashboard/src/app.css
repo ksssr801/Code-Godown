@@ -1,0 +1,63 @@
+:root {
+    --mainBlue:#2a2a72;
+    --lightBlue:#089ffd;
+    --mainWhite:#f3f3f3;
+    --mainDark:#232528;
+    --mainYellow:#ffa400;
+    --lightGreen:#0cd60c;
+    --mainRed: red;
+}
+
+body{
+    font-family: 'Acme', sans-serif !important;
+    background: var(--mainWhite) !important;
+    color: var(--mainDark) !important;
+}
+
+.text-title{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.text-blue{
+    color: var(--mainBlue);
+}
+
+.text-bright{
+    color: var(--lightBlue);
+}
+
+.home-style-icon{
+    color: rgb(153, 235, 150);
+    font-size: 1.8rem !important;
+}
+
+.home-style{
+    color: #d1d4d6;
+    font-size: 2rem !important;
+}
+
+.store-footer{
+    background: lavender;
+}
+
+.btn-black{
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 0.8rem !important;
+    color: var(--mainDark);
+    border-radius: 0 !important;
+    border: 0.1rem solid var(--mainDark) !important;
+}
+
+.btn-black:hover{
+    background: var(--mainDark) !important;
+    color: var(--mainWhite) !important;
+}
+
+.cart-icon{
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: red;
+}

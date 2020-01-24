@@ -1,0 +1,15 @@
+.wid-select-div1 {
+    border-style: solid;
+    border-color: darkgray;
+    border-width: .02px .01px .02px .02px; /* top right bottom left*/
+    height: 100vh;
+    background: #fff;
+}
+
+.wid-select-div2 {
+    border-style: solid;
+    border-color: darkgray;
+    border-width: .02px .02px .02px .02px; /* top right bottom left*/
+    height: 100vh;
+    background: #fff;
+}
