@@ -12,8 +12,8 @@ SQL Server & Database:
 
 	DB Name - EverestAzureDB
 	Server Name - everestazureserver
-	Server Login - everest
-	Server Pwd - eve@12345
+	Server Login - 
+	Server Pwd - 
 
 	Server:
 		url - GET https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}?api-version=2015-05-01-preview
