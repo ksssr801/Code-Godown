@@ -5,7 +5,7 @@ class Database:
 		self.conn = self.connectDB()
 
 	def connectDB(self):
-		conn = psycopg2.connect(host='192.168.50.130', dbname='everest_db', user='everest', password='EveIMS@121$')
+		conn = psycopg2.connect(host='127.0.0.1', dbname='db_name', user='user_of_db', password='password')
 		return conn
 
 	def executeSQLStatement(self, sql_stmt):
