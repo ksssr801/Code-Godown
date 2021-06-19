@@ -1,0 +1,35 @@
+Need to understand abt:
+- PoP (Points of Presence)
+- Caching Servers
+- Reverse Proxy Technology - Done
+- Forward Proxy Technology - Done
+- Scrubbing Servers
+- DDoS attack and protection
+- Caching Algos
+
+
+Achievables through CDN:
+- Performance
+- Scalability
+- Reliability
+- Responsivness
+
+CDN Topology:
+- Scattered CDN - This topology focus is on optimal physical proximity
+- Consolidated CDNs - operate a small number of high-capacity PoPs, which are strategically positioned in major data centers, to serve a wider populace
+
+Inside CDN Caching Servers:
+- increased RAM and CPU throughput, complemented by a high-capacity solid state drives (SSDs). RAM and SSD are used to provide high-speed access to cached objects, with RAM—being the faster of the two—used to store the more frequently-used items.
+- CDNs are about speed, and benchmark tests show SSDs to be significantly faster—even when compared to 7200 rpm HDDs.
+
+
+So What Can a CDN Do for Me?
+Modern CDNs can handle numerous IT tasks, helping you to:
+- Improve page load speed
+- Handle high traffic loads
+- Block spammers, scrapers and other bad bots
+- Localize coverage without the cost
+- Reduce bandwidth consumption
+- Load balance between multiple servers
+- Protect your website from DDoS attacks
+- Secure your application
